@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #1f2937;
+}
+
+.dashboard {
+    padding: 32px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.dashboard-header p {
+    margin-top: 8px;
+    color: #6b7280;
+}
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.kpi-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.kpi-title {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.kpi-value {
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+.charts-grid {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+.charts-grid > :last-child {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 1000px) {
+
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.tables-grid {
+    margin-top: 24px;
+}
+
+.table-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+td {
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background: #f9fafb;
+}
+
+@media (max-width: 900px) {
+
+    .kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .dashboard {
+        padding: 16px;
+    }
+
+    .kpi-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.tables-grid {
+    margin-top: 0px;
+}
+
+.table-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+td {
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background: #f9fafb;
+}
