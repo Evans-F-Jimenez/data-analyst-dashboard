@@ -1,4 +1,4 @@
-# Sales Analytics Dashboard
+# Sales Analytics Dashboard Proyect
 
 An interactive Business Intelligence and Data Analytics dashboard built with React, PostgreSQL, and Supabase.
 
